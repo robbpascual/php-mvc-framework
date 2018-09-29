@@ -10,7 +10,7 @@ class Pages extends Controller
     public function index()
     {
         $data = array(
-            'title' => 'This is Home Page'
+            'title' => 'This is the Home Page'
         );
 
         $this->view('pages/index', $data);
@@ -19,7 +19,7 @@ class Pages extends Controller
     public function about()
     {
         $data = array(
-            
+            'title' => 'This is the About Page'
         );
         
         $this->view('pages/about', $data);
