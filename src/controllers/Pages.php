@@ -18,7 +18,9 @@ class Pages extends Controller
 
     public function about()
     {
-        $data = array();
+        $data = array(
+            
+        );
         
         $this->view('pages/about', $data);
     }
