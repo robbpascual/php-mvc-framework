@@ -9,15 +9,18 @@ class Pages extends Controller
 
     public function index()
     {
-        $data = array();
+        $data = array(
+            'title' => 'This is Home Page'
+        );
 
-        $this->view('index', $data);
+        $this->view('pages/index', $data);
     }
 
-    public function about($id = '')
+    public function about()
     {
-        echo "THIS IS ECHO <br>";
-        echo $id;
+        $data = array();
+        
+        $this->view('pages/about', $data);
     }
 
     public function pageNotFound()
