@@ -26,6 +26,15 @@ class Pages extends Controller
         $this->view('pages/about', $data);
     }
 
+    public function contact()
+    {
+        $data = array(
+            'title' => 'This is the Contact Page'
+        );
+
+        $this->view('pages/contact', $data);
+    }
+
     public function pageNotFound()
     {
         echo 'Page not found';
